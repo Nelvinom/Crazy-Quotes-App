@@ -15,6 +15,9 @@ export class QuoteComponent implements OnInit {
     new Quote(5, 'Nobody ever','Find an online version and watch merlin find his daughter'),
     new Quote(6, 'Nobody ever will','Find an online version and watch merlin find his cat'),
   ];
+  toggleDetails(index){
+    this.quotes[index].showDescription = ! this.quotes[index].showDescription;
+  }
   constructor() { }
 
   ngOnInit() {
