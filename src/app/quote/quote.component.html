@@ -2,8 +2,11 @@
     <h1>My Quotes</h1>
     <hr>
     <ul>
-        <li *ngFor='let quote of quotes'>
-            {{quote.name}}
-        </li>
+        <div *ngFor='let quote of quotes'>
+            <li>{{quote.name}}</li>
+            <button (click)='toggleDetails(i)'>Toggle Details</button>
+            <app-quote-detail [quote]='quote'></app-quote-detail>
+        </div>
     </ul>
+    <p *ngIf='quotes.length>5'>You have too many quotes</p>
 </div>
