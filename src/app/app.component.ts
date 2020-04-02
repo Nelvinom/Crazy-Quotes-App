@@ -1,3 +1,4 @@
+import { Quote } from './quote';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Crazy-Quotes';
-}
+  quotes:Quote[] =[
+    {id:1, name:'Nobody else'},
+    {id:2, name:'Nobody can'},
+    {id:3, name:'Nobody will'},
+    {id:4, name:'Nobody shall'},
+    {id:5, name:'Nobody ever'},
+  ];
+  }
+
