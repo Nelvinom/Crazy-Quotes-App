@@ -1,1 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap.css" ;
+@import url('https://fonts.googleapis.com/css?family=Bangers|Dancing+Script|Lobster+Two|Spicy+Rice|Yeseva+One&display=swap');
+
+body{
+  background-image: url('../src/assets/801632.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
