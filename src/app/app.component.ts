@@ -1,5 +1,5 @@
-import { Quote } from './quote';
 import { Component } from '@angular/core';
+import { Quote } from './quote';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  quotes:Quote[] =[
-    // {id:1, name:'Nobody else'},
-    // {id:2, name:'Nobody can'},
-    // {id:3, name:'Nobody will'},
-    // {id:4, name:'Nobody shall'},
-    // {id:5, name:'Nobody ever'},
-  ];
+  
+  constructor() {}
+
+  ngOnInit() {
+
+  
+
+  }
   }
 
